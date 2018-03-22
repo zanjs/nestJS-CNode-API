@@ -1,4 +1,4 @@
-import { Component } from '@nestjs/common';
+import { Component, Query } from '@nestjs/common';
 import axios, { AxiosInstance } from 'axios';
 
 export class TopicService {
@@ -10,9 +10,9 @@ export class TopicService {
     });
   }
 
-  async list(page: number): Promise<object> {
+  async list(query: object): Promise<object> {
     const req = await this.client.get('topics', {
-      params: {page},
+      params: query,
     });
     return req.data;
   }
