@@ -11,14 +11,14 @@ export class TopicService {
   }
 
   async list(query: object): Promise<object> {
-    const req = await this.client.get('topics', {
+    const res = await this.client.get('topics', {
       params: query,
     });
-    return req.data;
+    return res.data;
   }
 
   async one(id: string): Promise<object> {
-    const req = await this.client.get('topic/' + id);
-    return req.data;
+    const res = await this.client.get('topic/' + id);
+    return res.data;
   }
 }
