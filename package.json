@@ -11,21 +11,21 @@
     "start:prod": "node dist/main.js"
   },
   "dependencies": {
-    "@nestjs/common": "^4.5.9",
-    "@nestjs/core": "^4.5.10",
-    "@nestjs/microservices": "^4.5.8",
-    "@nestjs/testing": "^4.5.5",
-    "@nestjs/websockets": "^4.5.8",
-    "axios": "^0.18.0",
+    "@nestjs/common": "^6.6.7",
+    "@nestjs/core": "^6.6.7",
+    "@nestjs/microservices": "^6.6.7",
+    "@nestjs/testing": "^6.6.7",
+    "@nestjs/websockets": "^6.6.7",
+    "axios": "^0.19.0",
     "redis": "^2.7.1",
     "reflect-metadata": "^0.1.12",
-    "rxjs": "^5.5.6",
-    "typescript": "^2.6.2"
+    "rxjs": "^6.5.3",
+    "typescript": "^3.6.2"
   },
   "devDependencies": {
-    "@types/node": "^9.3.0",
+    "@types/node": "^12.7.4",
     "nodemon": "^1.14.1",
-    "ts-node": "^4.1.0",
-    "tslint": "5.3.2"
+    "ts-node": "^8.3.0",
+    "tslint": "5.19.0"
   }
 }
